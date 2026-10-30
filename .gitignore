@@ -1,0 +1,19 @@
+# ===== 后端 =====
+target/
+*.class
+*.jar
+*.war
+.idea/
+*.iml
+
+# ===== 前端 =====
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.env.local
+frontend/npm-debug.log*
+
+# ===== 通用 =====
+.DS_Store
+*.log
+.vscode/

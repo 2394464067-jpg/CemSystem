@@ -1,0 +1,30 @@
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cemsystem_springboot?serverTimeZone=UTC
+    username: root
+    password: 123456
+
+jwt:
+  secret: your-very-long-secret-key-at-least-32-characters-long
+  expire: 86400000   # 24小时，单位毫秒
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  group-configs:
+    - group: default
+      paths-to-match: /**
+      packages-to-scan: com.ppphui.cemsystem.controller
+
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn
